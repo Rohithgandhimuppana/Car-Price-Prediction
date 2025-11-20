@@ -14,8 +14,8 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 TEMPLATES_DIR = os.path.join(os.path.dirname(__file__), "templates")
 templates = Jinja2Templates(directory=TEMPLATES_DIR)
 
-# Load your pipeline ONCE (good performance)
-pipeline = joblib.load("car_predict_pipeline.pkl")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "car_predict_pipeline.pkl")
+pipeline = joblib.load(MODEL_PATH)
 
 
 @app.get("/", response_class=HTMLResponse)
