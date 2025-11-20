@@ -4,14 +4,19 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import joblib
 import pandas as pd
+import os
 
 app = FastAPI()
 
-# Mount static folder for CSS
-app.mount("/static", StaticFiles(directory="static"), name="static")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # parent of app/
+
+# Mount static folder
+STATIC_DIR = os.path.join(BASE_DIR, "static")
+app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 # Templates directory
-templates = Jinja2Templates(directory="templates")
+TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
+templates = Jinja2Templates(directory=TEMPLATES_DIR)
 
 # Load your pipeline ONCE (good performance)
 pipeline = joblib.load("car_predict_pipeline.pkl")
