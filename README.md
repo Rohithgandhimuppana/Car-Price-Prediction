@@ -12,13 +12,13 @@ Extracted important attributes such as brand, model, year, kilometers driven, fu
 Cleaned and saved the dataset into a structured CSV for further processing.
 
 ### Machine Learning Pipeline
-Built a complete regression workflow including:
-Train/Test Split
-Data preprocessing
-OneHot encoding for categorical features
-Feature scaling
-Model training (Multiple Linear Regression)
-Evaluation using R², MAE, MSE
+#### Built a complete regression workflow including:
+##### Train/Test Split
+##### Data preprocessing
+##### OneHot encoding for categorical features
+##### Feature scaling
+##### Model training (Multiple Linear Regression)
+##### Evaluation using R², MAE, MSE
 
 ### FastAPI Backend Development
 Created REST API endpoints using FastAPI.
@@ -31,5 +31,6 @@ Gunicorn/Uvicorn server
 Proper folder structure for static/templates
 Production configuration
 App runs live and can be accessed publicly.
+
 
 
