@@ -4,6 +4,7 @@ This project predicts used car prices using a machine learning model trained on 
 
 ### Live API Link : https://car-price-prediction-6-lnha.onrender.com
 
-![App Image](/Screenshot 2025-11-20 210049.png)
+! [App Image](/Screenshot 2025-11-20 210049.png)
+
 
 
