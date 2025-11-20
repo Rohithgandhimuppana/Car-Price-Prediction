@@ -6,10 +6,30 @@ This project predicts used car prices using a machine learning model trained on 
 
 ![AppImage](appImage.png)
 
+### Data Collection (Web Scraping)
+Scraped real car listings using Selenium + BeautifulSoup.
+Extracted important attributes such as brand, model, year, kilometers driven, fuel type, transmission, engine power, location, and price.
+Cleaned and saved the dataset into a structured CSV for further processing.
 
+### Machine Learning Pipeline
+Built a complete regression workflow including:
+Train/Test Split
+Data preprocessing
+OneHot encoding for categorical features
+Feature scaling
+Model training (Multiple Linear Regression)
+Evaluation using R², MAE, MSE
 
+### FastAPI Backend Development
+Created REST API endpoints using FastAPI.
+Built a /predict endpoint that takes car features and returns predicted price.
+Integrated the model + pipeline into an ASGI application.
 
-
-
+### Deployment
+Deployed the FastAPI application on Render Cloud using:
+Gunicorn/Uvicorn server
+Proper folder structure for static/templates
+Production configuration
+App runs live and can be accessed publicly.
 
 
