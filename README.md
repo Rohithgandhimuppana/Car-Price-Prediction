@@ -7,9 +7,9 @@ This project predicts used car prices using a machine learning model trained on 
 ![AppImage](appImage.png)
 
 ### Data Collection (Web Scraping)
-Scraped real car listings using Selenium + BeautifulSoup.
-Extracted important attributes such as brand, model, year, kilometers driven, fuel type, transmission, engine power, location, and price.
-Cleaned and saved the dataset into a structured CSV for further processing.
+* Scraped real car listings using Selenium + BeautifulSoup.
+* Extracted important attributes such as brand, model, year, kilometers driven, fuel type, transmission, engine power, location, and price.
+* Cleaned and saved the dataset into a structured CSV for further processing.
 
 ### Machine Learning Pipeline
 #### Built a complete regression workflow including:
@@ -31,6 +31,7 @@ Gunicorn/Uvicorn server
 Proper folder structure for static/templates
 Production configuration
 App runs live and can be accessed publicly.
+
 
 
 
